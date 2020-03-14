@@ -11,10 +11,10 @@
 			var file = source.replace(/^.*[\\\/]/, "");
 			file = file.replace(".png", "");
 			var num = parseInt(file) + 1;
-			if (num > 7) {
+			if (num > 11) {
 				num -= 1
 			}
-			var path = source.substr(0, source.length - 5);
+			var path = source.substr(0, source.length - 4 - file.length);
 			var next = path.concat(num.toString(), ".png")
 			img.src = next;
 			return false;
@@ -30,8 +30,8 @@
 	</header>
 
 	<div style="background-color:#CCCCCC; color:#000000;" align="center">
-		<img id="page" onclick="nextPage();" src="Old\Pages\1.png" alt="Page" style="width:900px; max-width:100vw; cursor:pointer;">
-		<p>Click on the image to read the next page. Note: These pages are outdated and will be replaced when the new rendition of Confection Intelligence Agency is finished.</p>
+		<img id="page" onclick="nextPage();" src="Pages\Web\1.png" alt="Page" style="width:900px; max-width:100vw; cursor:pointer;">
+		<p>Click on the image to read the next page.</p>
 		<br>
 	</div>
 
