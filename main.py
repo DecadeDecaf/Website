@@ -1,8 +1,14 @@
 import discord
 from discord.ext import commands
+import random
+import math
+import datetime
+import calendar
 
 bot = commands.Bot(command_prefix="!")
 bot.remove_command("help")
+
+last = calendar.timegm(time.gmtime()) - 90
 
 @bot.event
 async def on_ready():
@@ -24,5 +30,34 @@ async def on_member_remove(member):
 
 async def decade(ctx):
     return ctx.author.id == 234109055554158593
+
+@bot.event
+async def on_message(message):
+	now = calendar.timegm(time.gmtime())
+	if now - 90 >= last:
+		s = open("names.txt", "r")
+		m = s.readlines()
+		l = []
+		for i in range(0, len(m) - 1):
+			x = m[i]
+			z = len(x)
+			a = x[: z - 1]
+			l.append(a)
+		l.append(m[i + 1])
+		name = random.choice(l)
+		await message.guild.me.edit(nick = name)
+		channel = message.author.channel
+		s = open("messages.txt", "r")
+		m = s.readlines()
+		l = []
+		for i in range(0, len(m) - 1):
+			x = m[i]
+			z = len(x)
+			a = x[: z - 1]
+			l.append(a)
+		l.append(m[i + 1])
+		reply = random.choice(l)
+		await channel.send(reply)
+		last = calendar.timegm(time.gmtime())
 
 bot.run(str(os.environ.get("BOT_TOKEN")))
