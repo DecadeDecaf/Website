@@ -10,7 +10,7 @@ import time
 bot = commands.Bot(command_prefix="!")
 bot.remove_command("help")
 
-last = calendar.timegm(time.gmtime()) - 90
+last = calendar.timegm(time.gmtime()) - 300
 
 @bot.event
 async def on_ready():
@@ -37,7 +37,7 @@ async def decade(ctx):
 async def on_message(message):
 	global last
 	now = calendar.timegm(time.gmtime())
-	if now - 90 >= last:
+	if now - 300 >= last:
 		last = calendar.timegm(time.gmtime())
 		s = open("names.txt", "r")
 		m = s.readlines()
