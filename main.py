@@ -35,6 +35,7 @@ async def decade(ctx):
 
 @bot.event
 async def on_message(message):
+	global last
 	now = calendar.timegm(time.gmtime())
 	if now - 90 >= last:
 		s = open("names.txt", "r")
