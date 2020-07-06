@@ -4,6 +4,7 @@ import random
 import math
 import datetime
 import calendar
+import time
 
 bot = commands.Bot(command_prefix="!")
 bot.remove_command("help")
