@@ -38,6 +38,7 @@ async def on_message(message):
 	global last
 	now = calendar.timegm(time.gmtime())
 	if now - 90 >= last:
+		last = calendar.timegm(time.gmtime())
 		s = open("names.txt", "r")
 		m = s.readlines()
 		l = []
@@ -61,6 +62,5 @@ async def on_message(message):
 		l.append(m[i + 1])
 		reply = random.choice(l)
 		await channel.send(reply)
-		last = calendar.timegm(time.gmtime())
 
 bot.run(str(os.environ.get("BOT_TOKEN")))
