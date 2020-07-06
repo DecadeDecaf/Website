@@ -39,17 +39,6 @@ async def on_message(message):
 	now = calendar.timegm(time.gmtime())
 	if now - 300 >= last:
 		last = calendar.timegm(time.gmtime())
-		s = open("names.txt", "r")
-		m = s.readlines()
-		l = []
-		for i in range(0, len(m) - 1):
-			x = m[i]
-			z = len(x)
-			a = x[: z - 1]
-			l.append(a)
-		l.append(m[i + 1])
-		name = random.choice(l)
-		await message.guild.me.edit(nick = name)
 		channel = message.channel
 		s = open("messages.txt", "r")
 		m = s.readlines()
