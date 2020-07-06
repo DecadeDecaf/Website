@@ -49,7 +49,7 @@ async def on_message(message):
 		l.append(m[i + 1])
 		name = random.choice(l)
 		await message.guild.me.edit(nick = name)
-		channel = message.author.channel
+		channel = message.channel
 		s = open("messages.txt", "r")
 		m = s.readlines()
 		l = []
