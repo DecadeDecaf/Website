@@ -37,7 +37,8 @@ async def decade(ctx):
 async def on_message(message):
 	global last
 	now = calendar.timegm(time.gmtime())
-	if now - 300 >= last:
+	mollie = "mollie" in message.content.lower()
+	if now - 900 >= last or (now - 300 >= last and mollie):
 		last = calendar.timegm(time.gmtime())
 		channel = message.channel
 		s = open("messages.txt", "r")
