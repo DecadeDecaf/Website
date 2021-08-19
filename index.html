@@ -1,54 +1,464 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
 
-<head>
-	<meta charset="utf-8">
-	<title>DecadeDecaf</title>
-	<link rel="shortcut icon" type="image/x-icon" href="Website/favicon.ico">
-	<style>
-		#U, #TDE, #S, #VF, #CIA, #YT {
-			width:250px; height:250px; cursor:pointer;
-		}
-		a {
-			color:#B4B4B4;
-		}
-	</style>
-	<script>
-		function popout(proj) {
-			var img = document.getElementById(proj);
-			img.src = "Website/" + proj + " Popout.png";
-			return false;
-		}
-		function popin(proj) {
-			var img = document.getElementById(proj);
-			img.src = "Website/" + proj + ".png";
-			return false;
-		}
-	</script>
-</head>
+    <title>Cade Quick</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-<body style="font-family:Roboto,sans-serif; background-color:#3D3D3D; color:#FFFFFF; text-shadow: 2px 2px 4px #000000; margin:0; padding:0; overflow-x:hidden;">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+  </head>
 
-	<header align="center" style="padding: 32px 32px 32px 32px;">
-		<h1 style="text-align:center; font-size:48px; font-weight:bold;">WHAT ARE YOU HERE FOR?</h1>
-		<h1 style="text-align:center; font-size:24px; font-style:italic; font-weight:bold; color:#B4B4B4;">I HAVE WORKED ON MANY THINGS</h1>
-	</header>
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Cade Quick</h4>
+              <span>Indie game dev & electronic music artist</span>
+              <div class="pride-flag">
+                <img src="assets/images/flag.png"><span> they/them</span></img>
+              </div>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Contact</a></li>
+                <!-- <li><a href="#section3">My Work</a></li>
+                <li><a href="#section4">Contact</a></li> -->
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://twitter.com/DecadeDecaf"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/DecadeDecaf/"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.patreon.com/decadedecaf"><i class="fab fa-patreon"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Cade Quick © 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	<div align="center" style="padding: 32px 32px 32px 32px;">
-		<a href="https://www.urbanitygame.com/"><img id="U" src="Website/U.png" alt="Urbanity" onmouseover="popout(id)" onmouseleave="popin(id)"></a><a href="https://decadedecaf.itch.io/the-december-effect"><img id="TDE" src="Website/TDE.png" alt="The December Effect" onmouseover="popout(id)" onmouseleave="popin(id)"></a><a href="https://open.spotify.com/artist/5LRUogg9YWxcBEv8LpcjvB"><img id="S" src="Website/S.png" alt="Spotify" onmouseover="popout(id)" onmouseleave="popin(id)"></a><a href="https://www.vastforecast.com/"><img id="VF" src="Website/VF.png" alt="Vast Forecast" onmouseover="popout(id)" onmouseleave="popin(id)"></a><a href="https://www.decadedecaf.com/cia"><img id="CIA" src="Website/CIA.png" alt="Confection Intelligence Agency" onmouseover="popout(id)" onmouseleave="popin(id)"></a><a href="https://www.youtube.com/channel/UCp-3m3hz7aV30txd0VXpBqw"><img id="YT" src="Website/YT.png" alt="YouTube" onmouseover="popout(id)" onmouseleave="popin(id)"></a>
-	</div>
-	
-	<div align="center" style="padding: 32px 32px 32px 32px;">
-		<h1 style="text-align:center; font-size:24px;">SOMETHING ELSE?</h1>
-		<p><a href="https://www.decadedecaf.com/gallery">DIGITAL ART GALLERY</a></p>
-		<p><a href="https://store.steampowered.com/app/886460/Outside_the_Lines/">OUTSIDE THE LINES</a></p>
-		<p>MY <a href="https://twitter.com/DecadeDecaf">TWITTER</a>, <a href="https://steamcommunity.com/id/DecadeDecaf/">STEAM</a>, AND <a href="https://www.twitch.tv/decadedecaf">TWITCH</a> PAGES</p>
-		<p>MY <a href="https://decadedecaf.itch.io/">ITCH</a>, <a href="https://github.com/DecadeDecaf">GITHUB</a>, AND <a href="https://ldjam.com/users/decadedecaf/">LUDUM DARE</a> PAGES</p>
-		<p>MY <a href="https://music.apple.com/us/artist/cade-quick/1513480151">APPLE MUSIC</a>, <a href="https://music.amazon.com/artists/B088NLLDQ7/cade-quick">AMAZON MUSIC</a>, AND <a href="https://decadedecaf.bandcamp.com/">BANDCAMP</a> PAGES</p>
-	</div>
+      <section class="section about-me" data-section="section1">
+        <div class="container" style="width: 75%; ">
+          <div class="section-heading" style="padding-top: 45px; padding-bottom: 45px;">
+            <h2>About</h2>
+            <div class="line-dec"></div>
+            <p>My name is Cade, and I make games and music.</p>
+            <p>I'm currently working with a few friends on a social simulation RPG about robots rebuilding civilization after humanity's extinction. I'm responsible for the programming, VFX, and SFX on that project.</p>
+            <p>I'm also a freelance house sitter.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="right-image-post" style="margin-top: 0px;">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text" style="width: 90%;">
+                  <h4>Game Development</h4>
+                  <p>I make indie games! You can find most of my projects hosted on itch.io, but I've also released a free game on Steam.</p>
+                  <p>I've participated in the Ludum Dare compo for the past few years, and all of my jam games are open source.</p>
+				  <div class="white-button">
+					<a href="https://decadedecaf.itch.io/">itch.io</a><a href="https://store.steampowered.com/search/?developer=Cade%20Quick">Steam</a><a href="https://github.com/DecadeDecaf">GitHub</a><a href="https://ldjam.com/users/decadedecaf/">Ludum Dare</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/urbanity.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text" style="width: 150%;">
+                  <h4 style="margin-top: 0px;">Discography</h4>
+                  <p>I make instrumental electronic music. Here are some of my favorite tracks I've done.</p>
+                  <iframe style="border: 0; width: 150%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=274846592/size=small/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="https://decadedecaf.bandcamp.com/track/i-should-be-wearing-an-eyepatch">I Should Be Wearing an Eyepatch by Cade Quick</a></iframe>
+                  <iframe style="border: 0; width: 150%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2143705331/size=small/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="https://decadedecaf.bandcamp.com/track/precipitation-50">Precipitation: 50% by Cade Quick</a></iframe>
+                  <iframe style="border: 0; width: 150%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1238813711/size=small/bgcol=333333/linkcol=ffffff/track=3641799546/transparent=true/" seamless><a href="https://decadedecaf.bandcamp.com/album/rainbow-festival-3">Rainbow Festival 3 by Cade Quick</a></iframe>
+                  <div class="white-button">
+                    <a href="https://open.spotify.com/artist/5LRUogg9YWxcBEv8LpcjvB">Spotify</a><a href="https://music.apple.com/us/artist/cade-quick/1513480151">Apple Music</a><a href="https://music.amazon.com/artists/B088NLLDQ7/cade-quick">Amazon Music</a><a href="https://decadedecaf.bandcamp.com/">Bandcamp</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text" style="width: 90%;">
+                  <h4>2D Artwork</h4>
+                  <p>Most of the artwork that I create is for my game projects, but I also have a short web comic about candy espionage.</p>
+				  <p>It's only eleven pages.</p>
+                  <div class="white-button">
+                    <a href="https://www.decadedecaf.com/cia">Confection Intelligence Agency</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/cia.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Stuff</h2>
+            <div class="line-dec"></div>
+            <span>I work on a variety of different projects.</span>
+          </div>
+        </div>
+      </section>
 
-	<footer align="center" style="padding: 32px 32px 32px 32px;">
-		<h1 style="text-align:center; font-size:24px;">CADE QUICK © 2021</h1>
-	</footer>
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Work</h2>
+            <div class="line-dec"></div>
+            <span
+              >Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
+              amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
+              mauris.</span
+            >
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>all</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="people"
+                    name="isotope-filter"
+                  />
+                  <span>people</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="nature"
+                    name="isotope-filter"
+                  />
+                  <span>nature</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="animals"
+                    name="isotope-filter"
+                  />
+                  <span>animals</span></label
+                >
+              </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-01.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-01.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>First Title</h4>
+                      <span>free to use our template</span>
+                    </figcaption>
+                  </figure>
+                </div>
 
-</body>
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-02.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-02.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Second Title</h4>
+                      <span>please tell your friends</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-03.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-03.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Item Third</h4>
+                      <span>customize anything</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-04.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-04.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Item Fourth</h4>
+                      <span>Re-distribution not allowed</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-05.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-05.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Fifth Awesome</h4>
+                      <span>Ut sollicitudin risus</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-06.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-06.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Awesome Sixth</h4>
+                      <span>Donec eget massa ante</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+-->
+      <section class="section contact-me" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact</h2>
+            <div class="line-dec"></div>
+            <span>Need to contact me for any reason? Send me an email!</span>
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Name"
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="email"
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Email"
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input
+                          name="subject"
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Subject"
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          rows="6"
+                          class="form-control"
+                          id="message"
+                          placeholder="Message..."
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 40px;">
+                        <p style="font-size: 20px; color: #ffffeb;">Just wanna chat?</p>
+                        <p style="font-size: 14px; margin-bottom: 2px;">DecadeDecaf#4128 on Discord</p>
+                        <a style="font-size: 12px; color: #ffffeb;" href="https://discord.gg/x3Jnp4Sb9x">https://discord.gg/x3Jnp4Sb9x</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
