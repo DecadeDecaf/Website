@@ -36,7 +36,8 @@ textarea {
 
 a,
 a:hover {
-    text-decoration: none;
+    color: #ffffeb;
+	text-decoration: none;
 }
 
 p {
